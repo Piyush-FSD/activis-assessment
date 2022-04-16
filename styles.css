@@ -1,0 +1,29 @@
+.test {
+  color: red;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 5vh;
+  padding-left: 2vh;
+}
+
+.hamburger-icon {
+  font-size: 6vh;
+  vertical-align: 50%;
+  padding-right: 2vh;
+
+  @media screen and (min-width: 1800px) {
+    visibility: hidden;
+  }
+}
+
+.fa-solid fa-bars {
+  @media screen and (min-width: 1800px) {
+    visibility: hidden;
+  }
+}
