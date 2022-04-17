@@ -1,29 +1,161 @@
-.test {
-  color: red;
+a {
+  color: #4a4848ad;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
 }
 
 .top-section {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  font-size: 5vh;
+  font-size: 20px;
   padding-left: 2vh;
+  margin: 0;
+  cursor: pointer;
 }
 
-.hamburger-icon {
+.hamburger-icon-container {
   font-size: 6vh;
-  vertical-align: 50%;
   padding-right: 2vh;
+  width: 20%;
+}
 
-  @media screen and (min-width: 1800px) {
-    visibility: hidden;
+@media screen and (min-width: 1024px) {
+  .hamburger-icon-container {
+    display: none;
+  }
+
+  .logo {
+    font-size: 10vh;
   }
 }
 
-.fa-solid fa-bars {
-  @media screen and (min-width: 1800px) {
-    visibility: hidden;
+.main-image {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.menu-item-container {
+  width: 60%;
+}
+
+.menu-item-container a {
+  padding-right: 2vw;
+}
+
+.logo-container {
+  width: 20%;
+}
+
+.main-header {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.text-area-container {
+  padding: 0px 9vw;
+  width: 50%;
+}
+
+.image-container {
+  padding: 0px 5vw;
+  width: 50%;
+}
+
+.login-register-container {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.login-register-container a {
+  display: inline-block;
+  text-align: center;
+  padding: 11px 25px;
+}
+
+.register-btn {
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.text-description {
+  font-size: 25px;
+}
+
+.learn-more-btn {
+  border: 2px solid;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 15px;
+  width: 140px;
+  margin-top: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.sponserImg {
+  margin-top: 15vh;
+  /* height: 8vh; */
+}
+
+.text-description {
+  color: #4a4848ad;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu-item-container,
+  .login-register-container {
+    display: none !important;
+  }
+
+  .top-section {
+    justify-content: space-between;
+  }
+  .logo {
+    width: 100%;
+    font-size: 9em;
+  }
+  .text-area-container {
+    padding: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .image-container {
+    padding: 0;
+    width: 100%;
+  }
+  .learn-more-btn {
+    margin: 3vh auto;
+    font-size: 24px; /*play*/
+    width: 23vw; /*play*/
+  }
+  .sponserImg {
+    margin-top: 2vh;
+    /* height: 8vh; */
+    width: 100%;
   }
 }
