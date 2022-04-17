@@ -1,5 +1,5 @@
 a {
-  color: #4a4848ad;
+  color: grey;
   cursor: pointer;
 }
 
@@ -13,7 +13,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 1em;
   padding-left: 2vh;
   margin: 0;
   cursor: pointer;
@@ -23,16 +23,6 @@ a:hover {
   font-size: 6vh;
   padding-right: 2vh;
   width: 20%;
-}
-
-@media screen and (min-width: 1024px) {
-  .hamburger-icon-container {
-    display: none;
-  }
-
-  .logo {
-    font-size: 10vh;
-  }
 }
 
 .main-image {
@@ -47,10 +37,12 @@ a:hover {
 
 .menu-item-container {
   width: 60%;
+  display: flex;
+  flex-direction: row;
 }
 
 .menu-item-container a {
-  padding-right: 2vw;
+  padding-right: 4vw;
 }
 
 .logo-container {
@@ -75,7 +67,7 @@ a:hover {
 .login-register-container {
   display: flex;
   width: 20%;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */ //sali
   padding-right: 30px;
 }
 
@@ -114,11 +106,14 @@ a:hover {
 
 .sponserImg {
   margin-top: 15vh;
-  /* height: 8vh; */
 }
 
 .text-description {
   color: #4a4848ad;
+}
+.dropdown {
+  display: flex;
+  margin-right: 10px;
 }
 
 .dropdown-content {
@@ -126,12 +121,13 @@ a:hover {
   position: absolute;
   background-color: #f1f1f1;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px red;
+  box-shadow: 0 6px 10px rgb(0 0 0 / 0.2);
   z-index: 1;
+  margin-top: 3vh;
 }
 
 .dropdown-content a {
-  color: black;
+  color: grey;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -139,6 +135,16 @@ a:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger-icon-container {
+    display: none;
+  }
+
+  .logo {
+    font-size: 10vh;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -157,7 +163,7 @@ a:hover {
   }
   .logo {
     width: 100%;
-    font-size: 9em;
+    font-size: 3em;
   }
   .text-area-container {
     padding: 0;
@@ -170,12 +176,11 @@ a:hover {
   }
   .learn-more-btn {
     margin: 3vh auto;
-    font-size: 24px; /*play*/
-    width: 23vw; /*play*/
+    font-size: 20px;
+    width: 18vw;
   }
   .sponserImg {
     margin-top: 2vh;
-    /* height: 8vh; */
     width: 100%;
   }
 }
