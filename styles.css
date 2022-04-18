@@ -84,6 +84,11 @@ a:hover {
 .register-btn {
   border: 2px solid;
   border-radius: 12px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .text-description {
@@ -101,6 +106,11 @@ a:hover {
   margin-top: 15px;
   display: block;
   cursor: pointer;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .learn-more-btn:hover {
@@ -109,7 +119,8 @@ a:hover {
 }
 
 .sponserImg {
-  margin-top: 10vh;
+  position: absolute;
+  bottom: 75px;
 }
 
 .text-description {
@@ -139,6 +150,22 @@ a:hover {
   display: block;
 }
 
+.fa-clipboard-list {
+  color: rgb(91, 83, 161);
+}
+
+.fa-calendar-days {
+  color: lightblue;
+}
+
+.fa-bell {
+  color: rgba(255, 255, 0, 0.691);
+}
+
+.fa-circle {
+  color: purple;
+}
+
 @media screen and (min-width: 1024px) {
   .hamburger-icon-container {
     display: none;
@@ -156,6 +183,10 @@ a:hover {
     display: none !important;
   }
 
+  .hamburger-icon-container {
+    margin-right: 10px;
+  }
+
   .main-header {
     font-size: 39px;
   }
@@ -163,6 +194,7 @@ a:hover {
   .top-section {
     justify-content: space-between;
   }
+
   .logo {
     width: 100%;
     font-size: 3em;
@@ -179,10 +211,12 @@ a:hover {
   .learn-more-btn {
     margin: 3vh auto;
     font-size: 20px;
-    width: 35vw;
+    width: 40vw;
   }
   .sponserImg {
     margin-top: 2vh;
     width: 100%;
+    position: relative;
+    bottom: 0;
   }
 }
